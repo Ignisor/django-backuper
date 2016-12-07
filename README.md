@@ -11,10 +11,19 @@ pip install https://github.com/Ignisor/django-backuper/raw/master/django-backupe
 ```
 'django_q',
 'dbbackup',
-'backuper_app',
 ```
 
 - Run migration
+```sh
+python manage.py migrate
+```
+
+- Now in settings.py under installed programms add
+```
+'backuper_app',
+```
+
+- And run migration again
 ```sh
 python manage.py migrate
 ```
