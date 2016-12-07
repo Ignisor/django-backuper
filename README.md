@@ -4,26 +4,17 @@
 
 - Install backuper using pip
 ```sh
-pip install https://github.com/Ignisor/django-backuper/raw/master/django-backuper-0.1.tar.gz
+pip install https://github.com/Ignisor/django-backuper/raw/master/django-backuper-0.2.tar.gz
 ```
 
 - In your settings.py under installed programms add
 ```
 'django_q',
 'dbbackup',
-```
-
-- Run migration
-```sh
-python manage.py migrate
-```
-
-- Now in settings.py under installed programms add
-```
 'backuper_app',
 ```
 
-- And run migration again
+- Run migration
 ```sh
 python manage.py migrate
 ```
@@ -38,12 +29,11 @@ DBBACKUP_FILENAME_TEMPLATE = 'db_backup'
 DBBACKUP_MEDIA_FILENAME_TEMPLATE = 'media_backup'
 
 # project name (must exist in backup server)
-BACKUPER_PROJECT_NAME = 'UberTest'
+BACKUPER_PROJECT_NAME = 'cool_project'
 # url-adress to server
-BACKUPER_SERVER_URL = 'http://127.0.0.1:8001/api/backup/'
-# login and password for server
-BACKUPER_SERVER_LOGIN = 'admin'
-BACKUPER_SERVER_PASSWORD = 'cucumber'
+BACKUPER_SERVER_URL = 'http://69.696.69.696:6969/api/backup/'
+# authorisation token for server
+BACKUPER_SERVER_TOKEN = '5c30a0072e361fcb599c58d3a7d1501e2731144a'
 ```
 
 - now you need to start django-q qcluster
