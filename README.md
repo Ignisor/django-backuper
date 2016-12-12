@@ -4,7 +4,7 @@
 
 - Install backuper using pip
 ```sh
-pip install https://github.com/Ignisor/django-backuper/raw/master/django-backuper-0.2.tar.gz
+pip install https://github.com/Ignisor/django-backuper/raw/master/django-backuper-0.3.tar.gz
 ```
 
 - In your settings.py under installed programms add
